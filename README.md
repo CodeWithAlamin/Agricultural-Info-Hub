@@ -2,6 +2,8 @@
 
 A comprehensive agricultural information platform designed to provide farmers and agricultural enthusiasts with essential knowledge about farming techniques, crop management, and pest control strategies.
 
+![Screenshot](./assets/images/website-og-image.jpeg)
+
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup and structure
