@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/libs/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Farming hub</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-sm bg-white shadow-sm fixed-top bg-opacity-75"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img
+              class="object-fit-cover rounded-pill shadow"
+              style="width: 3rem; height: 3rem"
+              src="../assets/images/logo.jpg"
+              alt="Logo"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler order-2 ms-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse order-3 order-md-2"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/guides.html">Guides</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/crop-details.html">Crops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/pest-control.html"
+                  >Pest control</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a
+            class="btn btn-success rounded-pill ms-auto ms-md-3 order-1 order-sm-3"
+            href="../pages/contact.html"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main style="margin-bottom: 7rem" class="overflow-hidden">
+      <!-- Carousel -->
+      <div
+        class="ratio ratio-16x9"
+        style="margin-top: 4.6rem"
+        data-aos="zoom-out"
+        data-aos-duration="1000"
+      >
+        <div
+          id="myCarousel"
+          class="carousel slide h-100"
+          data-bs-ride="carousel"
+        >
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active">
+              <img
+                src="https://images.pexels.com/photos/1192053/pexels-photo-1192053.jpeg"
+                alt="Grain crop"
+                class="d-block h-100 w-100 object-fit-cover"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/54084/wheat-grain-agriculture-seed-54084.jpeg"
+                alt="Grain crop"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/1393382/pexels-photo-1393382.jpeg"
+                alt="Grain crop"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- values -->
+
+      <section
+        class="container mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2 class="text-capitalize">
+          Nutritional value of <span class="text-success">grain crops</span>
+        </h2>
+        <p>
+          Values are given per 100 g of raw product. For comparison purposes,
+          the refined counterpart of whole grain flour and wild rice are also
+          included.
+        </p>
+
+        <table class="table table-bordered table-responsive">
+          <thead>
+            <tr>
+              <th>Nutritional Value</th>
+              <th>Unit</th>
+              <th>White wheat flour</th>
+              <th>Whole grain wheat flour</th>
+              <th>Brown rice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Energy</td>
+              <td>kcal</td>
+              <td>364</td>
+              <td>340</td>
+              <td>357</td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td>g</td>
+              <td>10.3</td>
+              <td>13.2</td>
+              <td>8.3</td>
+            </tr>
+            <tr>
+              <td>Total fat</td>
+              <td>g</td>
+              <td>1</td>
+              <td>2.5</td>
+              <td>2.6</td>
+            </tr>
+            <tr>
+              <td>Carbohydrates</td>
+              <td>g</td>
+              <td>73.6 <sup>a</sup></td>
+              <td>73.5</td>
+              <td>55.7<sup>a</sup></td>
+            </tr>
+            <tr>
+              <td>Fibre</td>
+              <td>g</td>
+              <td>3.6</td>
+              <td>6.5</td>
+              <td>8.7</td>
+            </tr>
+            <tr>
+              <td>Calcium</td>
+              <td>mg</td>
+              <td>13</td>
+              <td>41</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>Iron</td>
+              <td>mg</td>
+              <td>3.3</td>
+              <td>2.1</td>
+              <td>1.3</td>
+            </tr>
+            <tr>
+              <td>Magnesium</td>
+              <td>mg</td>
+              <td>43</td>
+              <td>64</td>
+              <td>84</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section
+        class="container mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2 class="text-capitalize">
+          Potential usage of <span class="text-success">grain crops</span>
+        </h2>
+        <p class="mt-4">
+          <i class="bi bi-check2-all text-success fs-4"></i> Staple Foods:
+          Grains like rice, wheat, and corn are processed into flours for bread,
+          pasta, and tortillas, or served directly as steam rice and porridge.
+        </p>
+        <p>
+          <i class="bi bi-check2-all text-success fs-4"></i> Nutritional Value:
+          They are a primary source of carbohydrates, fiber, and essential
+          nutrients, contributing significantly to global food security.
+        </p>
+        <p>
+          <i class="bi bi-check2-all text-success fs-4"></i> Fermented Products:
+          Grains are also fermented to produce beverages such as beer.
+        </p>
+        <p>
+          <i class="bi bi-check2-all text-success fs-4"></i> Livestock and
+          Poultry: A significant portion of harvested grains is used as animal
+          feed for livestock and poultry, which are then consumed by humans as
+          meat, dairy, and eggs.
+        </p>
+
+        <p>
+          <i class="bi bi-check2-all text-success fs-4"></i> Biofuels: Grains
+          are used to produce ethanol for motor fuels.
+        </p>
+        <p>
+          <i class="bi bi-check2-all text-success fs-4"></i> Oils and
+          Ingredients: They are processed to extract cooking oils, glucose, and
+          other food ingredients.
+        </p>
+      </section>
+
+      <section
+        class="container mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2 class="text-capitalize">
+          Common <span class="text-success">grain crops</span>
+        </h2>
+
+        <div class="row row-cols-md-2 mt-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img
+              class="rounded-3 shadow"
+              style="height: 5.5rem; width: 5.5rem"
+              src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR2jTDBChphUAqGSqjzQqUJq0dPwq8CdPpidQdB0ov1I7xYVaB4WaYJT5Ie1Ya8te_6uiYdY0UX&s=19"
+              alt="grain crop thumbnail"
+            />
+
+            <div>
+              <h5>Wheat:</h5>
+              <p>A staple grain used for bread and other baked goods.</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img
+              class="rounded-3 shadow"
+              style="height: 5.5rem; width: 5.5rem"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDqP7Z-wSKDdoM3Xf2hjEzoSF_e59_Dc6g2_B2Ju2RN5virGH0frxUlwiu1Im3lM66q8E&usqp=CAU"
+            />
+
+            <div>
+              <h5>Corn:</h5>
+              <p>
+                Corn grains. Corn is a sweet grain first cultivated in Mexico
+                from wild grass over 10,000 years ago.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img
+              class="rounded-3 shadow"
+              style="height: 5.5rem; width: 5.5rem"
+              src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQiq6stcg76LoJ78Nede54Xs7i9E8cyaC_3xuSufpV5CU1P9kcJ1qoPSCLR-ks9fce5H9u7RV6P&s=19"
+              alt="grain crop thumbnail"
+            />
+
+            <div>
+              <h5>Barley:</h5>
+              <p>Used in livestock feed, for brewing, and as a whole grain.</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img
+              class="rounded-3 shadow"
+              style="height: 5.5rem; width: 5.5rem"
+              src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcR6XXf-SBPt0836OTlKkNeRKaxgGrkBLDZ5OL03XKDEacLvKW_NXmoIdErGGEa9Tiwh"
+              alt="grain crop thumbnail"
+            />
+
+            <div>
+              <h5>Oats:</h5>
+              <p>A whole grain and a staple food, often consumed as oatmeal.</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img
+              class="rounded-3 shadow"
+              style="height: 5.5rem; width: 5.5rem"
+              src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTm41RMxLjX1xMCQ8kkI3NGp30lO6Uh-SFUP2tNINdu9LcqM-74JKhi6fEfQ9qydAx2ZszMCN0-&s=19"
+              alt="grain crop thumbnail"
+            />
+
+            <div>
+              <h5>Rice:</h5>
+              <p>
+                A major staple food for a large portion of the world's
+                population.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img
+              class="rounded-3 shadow"
+              style="height: 5.5rem; width: 5.5rem"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlVKCPDDp3djm1ABEBH6gXpDIUii4wy6PwrKiDyUG8KgIP7cq1ItJ0&s=0"
+              alt="grain crop thumbnail"
+            />
+
+            <div>
+              <h5>Sorghum:</h5>
+              <p>
+                A cereal grain that is a staple food and used in animal feed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2 class="text-capitalize">
+          Cultivation methods of <span class="text-success">grain crops</span>
+        </h2>
+
+        <div class="mt-4">
+          <h5>Seedbed Preparation:</h5>
+          <ul>
+            <li>
+              Tillage: The soil is turned and broken up to create a fine, even
+              seedbed.
+            </li>
+            <li>
+              Leveling: The field is leveled to ensure uniform water
+              distribution and promote good seed-soil contact.
+            </li>
+            <li>
+              Soil Conditioning: Compost or other organic matter may be added to
+              improve soil fertility and structure.
+            </li>
+          </ul>
+
+          <h5>Sowing:</h5>
+          <ul>
+            <li>
+              Seed Selection: Choose high-quality seeds suited to the local
+              climate and soil conditions.
+            </li>
+            <li>
+              Covering: Seeds are covered with a thin layer of soil to protect
+              them from birds and the elements, ensuring proper germination.
+            </li>
+          </ul>
+
+          <h5>Crop Management:</h5>
+          <ul>
+            <li>
+              Fertilization: Apply fertilizers to provide essential nutrients
+              for optimal plant growth and yield.
+            </li>
+            <li>
+              Irrigation: Provide water, especially during early growth and dry
+              periods, to support root system development and grain filling.
+            </li>
+            <li>
+              Weed, Pest, and Disease Control: Implement practices like crop
+              rotation and targeted treatments to manage weeds, pests, and
+              diseases.
+            </li>
+          </ul>
+
+          <h5>Harvesting:</h5>
+          <ul>
+            <li>
+              Timing: Harvest when the grain heads turn golden yellow, the
+              plants become brittle, and the grains are hard.
+            </li>
+            <li>
+              Method: Grains can be harvested manually using a sickle or
+              mechanically with a combine harvester.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="container mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2 class="text-capitalize">
+          Soil requirements of <span class="text-success">grain crops</span>
+        </h2>
+
+        <ul>
+          <li>
+            <span class="text-success fw-bold">Texture:</span> Medium-textured
+            soils like loam are preferred because they provide a good balance of
+            sand, silt, and clay for nutrient retention and good drainage.
+          </li>
+
+          <li>
+            <span class="text-success fw-bold">Drainage:</span>
+            Well-drained soil is crucial to prevent waterlogging and ensure good
+            air circulation for root health.
+          </li>
+
+          <li>
+            <span class="text-success fw-bold">Fertility:</span>Soils must be
+            fertile and rich in organic matter to supply the necessary nutrients
+            for robust plant growth.
+          </li>
+
+          <li>
+            <span class="text-success fw-bold">Structure:</span>A
+            well-structured soil allows for good root proliferation and air
+            exchange, which is vital for nutrient and water uptake.
+          </li>
+          <li>
+            <span class="text-success fw-bold">Moisture:</span> Adequate soil
+            moisture retention is important, but must be balanced with good
+            drainage to prevent waterlogging.
+          </li>
+        </ul>
+      </section>
+
+      <!-- harvesting techniques -->
+      <section
+        class="container mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2 class="text-capitalize">
+          Harvesting techniques of <span class="text-success">grain crops</span>
+        </h2>
+
+        <div class="row row-cols-md-2 row-cols-1">
+          <div class="col">
+            <h4 class="mt-4">Manual Harvesting</h4>
+            <p>
+              This traditional method uses simple tools and is often for
+              small-scale farming.
+            </p>
+
+            <ul>
+              <li>
+                Reaping: Farmers use hand tools like sickles to cut the stalks.
+              </li>
+              <li>
+                Threshing: The cut grain is then beaten or flailed against a
+                surface or a tarp to separate the grains.
+              </li>
+              <li>
+                Winnowing: The grain is then separated from the chaff (small
+                debris) by tossing it in the air, allowing the wind to blow the
+                lighter chaff away.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h4 class="mt-4">Mechanical Harvesting</h4>
+            <p>This method uses machinery for large-scale grain production.</p>
+            <ul>
+              <li>
+                Reaping: Combine harvesters cut the crop at its base or head.
+              </li>
+              <li>
+                Threshing & Cleaning: The combine harvester then performs the
+                threshing (separating grain from the stalk) and cleaning
+                processes (removing immature and non-grain materials)
+                simultaneously.
+              </li>
+              <li>
+                Corn Harvesting: Corn requires a specialized corn head
+                attachment on a combine to husk the ears from the stalk before
+                shelling the kernels.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  -->
+    <!-- Footer -->
+    <!--  -->
+    <footer
+      class="bg-success bg-opacity-10"
+      style="padding-top: 4rem; padding-bottom: 2rem"
+    >
+      <div class="container" style="margin-bottom: 4rem">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+          <div class="col" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-geo-alt text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Address</h4>
+                <span class="opacity-75"
+                  ><small
+                    >House: 17, Road: 01, <br />
+                    Dhaka-1216</small
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-telephone text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Contact</h4>
+                <span class="opacity-75">
+                  <small>Phone: +880 123456789 </small><br />
+                  <small>Email: codewithalamin@email.com </small>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-clock text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Opening Hours</h4>
+                <span class="opacity-75">
+                  <small>Sun-Thu: 9AM - 7PM </small><br />
+                  <small>Fri-Sat: Closed </small>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
+            <h4 class="fs-5 text-center text-md-start">Follow Us</h4>
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start"
+            >
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-whatsapp fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-twitter fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-linkedin fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="container text-center" style="margin-top: 2rem">
+        <p>
+          <small>
+            Designed and developed by
+            <a
+              href="http://codewithalamin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-success"
+              >Alamin</a
+            >
+          </small>
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/libs/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/libs/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Farming hub</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-sm bg-white shadow-sm fixed-top bg-opacity-75"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img
+              class="object-fit-cover rounded-pill shadow"
+              style="width: 3rem; height: 3rem"
+              src="../assets/images/logo.jpg"
+              alt="Logo"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler order-2 ms-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse order-3 order-md-2"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/guides.html">Guides</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/crop-details.html">Crops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/pest-control.html"
+                  >Pest control</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a
+            class="btn btn-success rounded-pill ms-auto ms-md-3 order-1 order-sm-3"
+            href="../pages/contact.html"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main style="margin-block: 3rem" class="overflow-hidden">
+      <!-- Main -->
+
+      <!--  -->
+      <!-- Pest control -->
+      <!--  -->
+
+      <section class="container" style="padding-block: 4rem" id="pest-control">
+        <div
+          class="mx-auto text-center mb-5"
+          style="max-width: 30rem"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2 class="h1">Pest Control Strategies</h2>
+          <p>
+            Learn effective ways to control pests and keep your crops healthy.
+          </p>
+        </div>
+
+        <div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  1. Integrated Pest Management (IPM)
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  IPM—described above—serves as an umbrella strategy that
+                  integrates prevention, monitoring, action thresholds, and
+                  multiple control methods for intelligent, sustainable pest
+                  management.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  2. Biological Pest Control Methods
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  This involves introducing natural enemies of pests, such as
+                  predatory insects (ladybugs, lacewings), parasitoid wasps,
+                  nematodes, or bacterial pathogens (e.g., Bacillus
+                  thuringiensis for caterpillars). These allies keep pest
+                  populations below damaging levels with negligible side effects
+                  on the environment.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  3. Crop Rotation
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Rotating crops seasonally disrupts pest life cycles and
+                  prevents the buildup of soil-borne diseases and pests. For
+                  instance, alternating cereals and legumes helps relieve soil
+                  fatigue and reduce the incidence of many crop-specific pests.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  4. Mechanical Controls
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Physical tools, handpicking, using agricultural machinery to
+                  remove pests, sticky traps, pheromone traps, and tillage are
+                  all part of mechanical pest management strategies. They target
+                  pests directly and help minimize chemical intervention.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFive"
+                >
+                  5. Botanical Pesticides & Bio-Based Solutions
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Made from plant-derived compounds (neem oil, pyrethrum, garlic
+                  extract), botanical pesticides often break down quickly in the
+                  environment and offer a greener alternative to synthetic
+                  chemicals. Bio-based methods—including microbial sprays—target
+                  specific pests while protecting beneficial species.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSix"
+                >
+                  6. Physical Barriers & Exclusion Techniques
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Including row covers, nets, traps, and mulch—these barriers
+                  physically block pests’ access, preventing infestation before
+                  it starts. Used as part of an IPM system, they are especially
+                  effective for fruit and vegetable crops.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSeven"
+                >
+                  7. Digital & Remote Pest Monitoring (Advanced Sensors &
+                  Drones)
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSeven"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  The advent of sensor-driven, AI-powered pest detection and
+                  satellite imagery enables real-time tracking of pest hotspots
+                  and early outbreaks. Platforms like ours at Farmonaut provide
+                  advanced farm monitoring and crop health analytics, helping
+                  farmers make data-driven decisions to optimally target
+                  interventions and reduce pesticide use.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  -->
+    <!-- Footer -->
+    <!--  -->
+    <footer
+      class="bg-success bg-opacity-10"
+      style="padding-top: 4rem; padding-bottom: 2rem"
+    >
+      <div class="container" style="margin-bottom: 4rem">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+          <div class="col" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-geo-alt text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Address</h4>
+                <span class="opacity-75"
+                  ><small
+                    >House: 17, Road: 01, <br />
+                    Dhaka-1216</small
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-telephone text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Contact</h4>
+                <span class="opacity-75">
+                  <small>Phone: +880 123456789 </small><br />
+                  <small>Email: codewithalamin@email.com </small>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-clock text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Opening Hours</h4>
+                <span class="opacity-75">
+                  <small>Sun-Thu: 9AM - 7PM </small><br />
+                  <small>Fri-Sat: Closed </small>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
+            <h4 class="fs-5 text-center text-md-start">Follow Us</h4>
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start"
+            >
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-whatsapp fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-twitter fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-linkedin fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="container text-center" style="margin-top: 2rem">
+        <p>
+          <small>
+            Designed and developed by
+            <a
+              href="http://codewithalamin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-success"
+              >Alamin</a
+            >
+          </small>
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/libs/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

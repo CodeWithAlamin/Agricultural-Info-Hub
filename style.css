@@ -1,0 +1,28 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.crop-card {
+  outline: 2px solid transparent;
+  transition: outline 0.2s ease;
+}
+
+.crop-card:hover {
+  outline: var(--bs-success) 2px solid;
+}
+
+.crop-card-img {
+  transition: all 0.2s ease;
+}
+
+.crop-card:hover .crop-card-img {
+  transform: scale(1.1);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #19875417;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}

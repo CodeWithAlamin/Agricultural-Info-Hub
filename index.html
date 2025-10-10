@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/libs/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Farming hub</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-sm bg-white shadow-sm fixed-top bg-opacity-75"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img
+              class="object-fit-cover rounded-pill shadow"
+              style="width: 3rem; height: 3rem"
+              src="../assets/images/logo.jpg"
+              alt="Logo"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler order-2 ms-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse order-3 order-md-2"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/guides.html">Guides</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/crop-details.html">Crops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/pest-control.html"
+                  >Pest control</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a
+            class="btn btn-success rounded-pill ms-auto ms-md-3 order-1 order-sm-3"
+            href="./pages/contact.html"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="overflow-hidden">
+      <!--  -->
+      <!-- Home -->
+      <!--  -->
+      <section
+        class="position-relative overflow-hidden mx-auto hero-section-container d-flex flex-column justify-content-center align-items-center"
+        id="home"
+        style="min-height: 100vh"
+      >
+        <div
+          class="position-absolute top-0 start-0 z-0 w-100"
+          style="width: 100vw; height: 100vh"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
+          <img
+            class="w-100 h-100 object-fit-cover"
+            style="pointer-events: none; user-select: none; height: 100vh"
+            src="./assets/images/hero-image.avif"
+            alt="Farming"
+          />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: rgba(0, 0, 0, 0.3)"
+          ></div>
+        </div>
+
+        <div class="">
+          <div class="container text-center text-white z-1">
+            <h1
+              class="mb-4 display-2"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              Welcome to the <br />Agricultural Info Hub
+            </h1>
+            <p
+              style="max-width: 40rem"
+              class="mx-auto"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              Green Acres isn't your grandparent's farm. Using the latest in
+              sustainable technology, we cultivate our crops in a way that is
+              both eco-friendly and hyper-efficient. We combine tradition with
+              innovation to bring you the freshest produce, delivered right to
+              your door.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <!-- Farming guides -->
+      <!--  -->
+      <section class="container" id="guides" style="padding-block: 4rem">
+        <div
+          class="mx-auto text-center mb-5"
+          style="max-width: 30rem"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2 class="h1">Farming Guides</h2>
+          <p>
+            Explore our farming guides on various crops and try them to get the
+            best outcomes.
+          </p>
+        </div>
+
+        <!-- Tabs -->
+
+        <div
+          class="d-flex flex-column gap-3 justify-content-center align-items-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div>
+            <div class="dropdown border rounded">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                Seasonal
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item">Seasonal</button></li>
+                <li><button class="dropdown-item">Crop types</button></li>
+                <li>
+                  <button class="dropdown-item">Farming Methods</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- chips -->
+          <div>
+            <button class="btn btn-sm btn-success rounded-pill">Summer</button>
+            <button class="btn btn-sm btn-outline-success rounded-pill">
+              Monsoon
+            </button>
+            <button class="btn btn-sm btn-outline-success rounded-pill">
+              Winter
+            </button>
+          </div>
+        </div>
+
+        <!-- CArds -->
+        <div class="mt-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="./pages/crop-tomato.html"
+              rel="noopener noreferrer"
+              class="text-decoration-none"
+            >
+              <div class="overflow-hidden card crop-card border-0 shadow">
+                <div class="overflow-hidden ratio ratio-16x9">
+                  <img
+                    class="card-img-top w-100 crop-card-img h-100 object-fit-cover"
+                    src="https://plus.unsplash.com/premium_photo-1661811820259-2575b82101bf?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                  />
+                </div>
+                <div class="card-body text-center bg-success bg-opacity-10">
+                  <h4 class="card-title">Tomato</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="./pages/crop-tomato.html"
+              rel="noopener noreferrer"
+              class="text-decoration-none"
+            >
+              <div class="overflow-hidden card crop-card border-0 shadow">
+                <div class="overflow-hidden ratio ratio-16x9">
+                  <img
+                    class="card-img-top w-100 crop-card-img h-100 object-fit-cover"
+                    src="https://images.unsplash.com/photo-1599403417231-8387b0a3b7ad?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                  />
+                </div>
+                <div class="card-body text-center bg-success bg-opacity-10">
+                  <h4 class="card-title">Potato</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="./pages/crop-tomato.html"
+              rel="noopener noreferrer"
+              class="text-decoration-none"
+            >
+              <div class="overflow-hidden card crop-card border-0 shadow">
+                <div class="overflow-hidden ratio ratio-16x9">
+                  <img
+                    class="card-img-top w-100 crop-card-img h-100 object-fit-cover"
+                    src="https://images.unsplash.com/photo-1543257580-7269da773bf5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                  />
+                </div>
+                <div class="card-body text-center bg-success bg-opacity-10">
+                  <h4 class="card-title">Wheat</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="./pages/crop-tomato.html"
+              rel="noopener noreferrer"
+              class="text-decoration-none"
+            >
+              <div class="overflow-hidden card crop-card border-0 shadow">
+                <div class="overflow-hidden ratio ratio-16x9">
+                  <img
+                    class="card-img-top w-100 crop-card-img h-100 object-fit-cover"
+                    src="https://plus.unsplash.com/premium_photo-1705338026411-00639520a438?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                  />
+                </div>
+                <div class="card-body text-center bg-success bg-opacity-10">
+                  <h4 class="card-title">Rice</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="./pages/crop-tomato.html"
+              rel="noopener noreferrer"
+              class="text-decoration-none"
+            >
+              <div class="overflow-hidden card crop-card border-0 shadow">
+                <div class="overflow-hidden ratio ratio-16x9">
+                  <img
+                    class="card-img-top w-100 crop-card-img h-100 object-fit-cover"
+                    src="https://plus.unsplash.com/premium_photo-1667047165840-803e47970128?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                  />
+                </div>
+                <div class="card-body text-center bg-success bg-opacity-10">
+                  <h4 class="card-title">Corn</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col" data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="./pages/crop-tomato.html"
+              rel="noopener noreferrer"
+              class="text-decoration-none"
+            >
+              <div class="overflow-hidden card crop-card border-0 shadow">
+                <div class="overflow-hidden ratio ratio-16x9">
+                  <img
+                    class="card-img-top w-100 crop-card-img h-100 object-fit-cover"
+                    src="https://plus.unsplash.com/premium_photo-1661840453139-aef1ff57f4da?q=80&w=1023&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                  />
+                </div>
+                <div class="card-body text-center bg-success bg-opacity-10">
+                  <h4 class="card-title">Soybeans</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <!-- Crop details -->
+      <!--  -->
+
+      <section class="bg-body-tertiary" id="crops" style="padding-block: 4rem">
+        <div class="container">
+          <div
+            class="mx-auto text-center mb-5"
+            style="max-width: 30rem"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 class="h1">Crop Details</h2>
+            <p>
+              Learn the key steps and comprehensive details for crops. Get Our
+              experts best opinions.
+            </p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col" data-aos="fade-right" data-aos-duration="1000">
+              <div class="card shadow text-center p-2 border-0 h-100">
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="rounded-circle shadow"
+                    src="https://plus.unsplash.com/premium_photo-1661847023487-c220e684efa7?q=80&w=1464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                    style="height: 10rem; width: 10rem; object-fit: cover"
+                  />
+                </div>
+
+                <div class="card-body d-flex flex-column h-100">
+                  <h4 class="card-title">Grains</h4>
+                  <p class="card-text">
+                    Grain crop is any plant that produces a small, hard, dry
+                    seed or fruit that is harvested for human or animal
+                    consumption. The term encompasses several categories of
+                    grain-producing plants, most notably cereals and legumes.
+                  </p>
+
+                  <a
+                    href="./pages/grain-crops.html"
+                    class="btn btn-outline-success mt-auto py-3"
+                  >
+                    Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" data-aos="fade-left" data-aos-duration="1000">
+              <div class="card shadow text-center p-2 border-0 h-100">
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="rounded-circle shadow"
+                    src="https://plus.unsplash.com/premium_photo-1664007711033-c7ad6a9d0940?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                    style="height: 10rem; width: 10rem; object-fit: cover"
+                  />
+                </div>
+
+                <div class="card-body d-flex flex-column h-100">
+                  <h4 class="card-title">Fruits</h4>
+                  <p class="card-text">
+                    Fruit crops are plants cultivated for their edible,
+                    seed-bearing fruits, which are important for human
+                    nutrition, agriculture, and economies worldwide.
+                  </p>
+                  <a
+                    href="./pages/grain-crops.html"
+                    class="btn btn-outline-success mt-auto py-3"
+                  >
+                    Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" data-aos="fade-right" data-aos-duration="1000">
+              <div class="card shadow text-center p-2 border-0 h-100">
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="rounded-circle shadow"
+                    src="https://images.unsplash.com/photo-1687365301009-af603af2a8a9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Card image"
+                    style="height: 10rem; width: 10rem; object-fit: cover"
+                  />
+                </div>
+
+                <div class="card-body d-flex flex-column h-100">
+                  <h4 class="card-title">Vegetables</h4>
+                  <p class="card-text">
+                    Vegetable crops are plants cultivated for their edible
+                    parts, such as leaves, roots, stems, flowers, or fruits,
+                    which are used for human consumption to provide essential
+                    nutrients and fiber.
+                  </p>
+                  <a
+                    href="./pages/grain-crops.html"
+                    class="btn btn-outline-success mt-auto py-3"
+                  >
+                    Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" data-aos="fade-left" data-aos-duration="1000">
+              <div class="card shadow text-center p-2 border-0 h-100">
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="rounded-circle shadow"
+                    src="https://as2.ftcdn.net/jpg/00/50/61/51/1000_F_50615183_HbB3F1CBcrUKNfw6OYC2T1g84YxSCs2J.jpg"
+                    alt="Card image"
+                    alt="Card image"
+                    style="height: 10rem; width: 10rem; object-fit: cover"
+                  />
+                </div>
+
+                <div class="card-body d-flex flex-column h-100">
+                  <h4 class="card-title">Cash crops</h4>
+                  <p class="card-text">
+                    Cash crops are agricultural crops that are planted for the
+                    purpose of selling on the market or for export to make
+                    profit, as distinguished from subsistence crops planted for
+                    the purpose of self-supply of the farmer.
+                  </p>
+                  <a
+                    href="./pages/grain-crops.html"
+                    class="btn btn-outline-success py-3 mt-auto"
+                  >
+                    Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <!-- Pest control -->
+      <!--  -->
+
+      <section class="container" style="padding-block: 4rem" id="pest-control">
+        <div
+          class="mx-auto text-center mb-5"
+          style="max-width: 30rem"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2 class="h1">Pest Control Strategies</h2>
+          <p>
+            Learn effective ways to control pests and keep your crops healthy.
+          </p>
+        </div>
+
+        <div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  1. Integrated Pest Management (IPM)
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  IPM—described above—serves as an umbrella strategy that
+                  integrates prevention, monitoring, action thresholds, and
+                  multiple control methods for intelligent, sustainable pest
+                  management.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  2. Biological Pest Control Methods
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  This involves introducing natural enemies of pests, such as
+                  predatory insects (ladybugs, lacewings), parasitoid wasps,
+                  nematodes, or bacterial pathogens (e.g., Bacillus
+                  thuringiensis for caterpillars). These allies keep pest
+                  populations below damaging levels with negligible side effects
+                  on the environment.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  3. Crop Rotation
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Rotating crops seasonally disrupts pest life cycles and
+                  prevents the buildup of soil-borne diseases and pests. For
+                  instance, alternating cereals and legumes helps relieve soil
+                  fatigue and reduce the incidence of many crop-specific pests.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  4. Mechanical Controls
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Physical tools, handpicking, using agricultural machinery to
+                  remove pests, sticky traps, pheromone traps, and tillage are
+                  all part of mechanical pest management strategies. They target
+                  pests directly and help minimize chemical intervention.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFive"
+                >
+                  5. Botanical Pesticides & Bio-Based Solutions
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Made from plant-derived compounds (neem oil, pyrethrum, garlic
+                  extract), botanical pesticides often break down quickly in the
+                  environment and offer a greener alternative to synthetic
+                  chemicals. Bio-based methods—including microbial sprays—target
+                  specific pests while protecting beneficial species.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSix"
+                >
+                  6. Physical Barriers & Exclusion Techniques
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Including row covers, nets, traps, and mulch—these barriers
+                  physically block pests’ access, preventing infestation before
+                  it starts. Used as part of an IPM system, they are especially
+                  effective for fruit and vegetable crops.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSeven"
+                >
+                  7. Digital & Remote Pest Monitoring (Advanced Sensors &
+                  Drones)
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSeven"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  The advent of sensor-driven, AI-powered pest detection and
+                  satellite imagery enables real-time tracking of pest hotspots
+                  and early outbreaks. Platforms like ours at Farmonaut provide
+                  advanced farm monitoring and crop health analytics, helping
+                  farmers make data-driven decisions to optimally target
+                  interventions and reduce pesticide use.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <!-- Contact -->
+      <!--  -->
+
+      <section
+        class="bg-body-tertiary"
+        style="padding-block: 4rem"
+        id="contact"
+      >
+        <div class="container">
+          <div
+            class="mx-auto text-center mb-5"
+            style="max-width: 30rem"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 class="h1">Contact</h2>
+            <p>Contact our experts and get the best information</p>
+          </div>
+
+          <div class="row align-items-stretch g-4">
+            <div class="col-lg-5">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="d-flex flex-column justify-content-between p-5 rounded-4 text-bg-success h-100"
+              >
+                <div>
+                  <div
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <h3>Contact Information</h3>
+                    <p>
+                      Reach out to our team for expert advice on farming, crop
+                      selection, pest control, and sustainable agriculture. We
+                      are here to help you grow better and smarter.
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex gap-3 align-items-center bg-white bg-opacity-10 rounded-4 p-3 mb-3"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <span
+                      class="rounded-pill p-2 bg-white bg-opacity-25 d-flex justify-content-center align-items-center"
+                      style="height: 3rem; width: 3rem"
+                      ><i class="bi bi-pin-map-fill"></i
+                    ></span>
+                    <span class="">
+                      <span class="fw-bold">Our Location</span><br />
+                      <span class="opacity-75"
+                        ><small>House: 17, Road: 01, Dhaka-1216</small></span
+                      >
+                    </span>
+                  </div>
+
+                  <div
+                    class="d-flex gap-3 align-items-center bg-white bg-opacity-10 rounded-4 p-3 mb-3"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
+                    <span
+                      class="rounded-pill p-2 bg-white bg-opacity-25 d-flex justify-content-center align-items-center"
+                      style="height: 3rem; width: 3rem"
+                      ><i class="bi bi-envelope-open-fill"></i
+                    ></span>
+                    <span class="">
+                      <span class="fw-bold">Email Us</span><br />
+                      <span class="opacity-75 text-break"
+                        ><small>codewithalamin@email.com</small></span
+                      >
+                    </span>
+                  </div>
+
+                  <div
+                    class="d-flex gap-3 align-items-center bg-white bg-opacity-10 rounded-4 p-3 mb-3"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="500"
+                  >
+                    <span
+                      class="rounded-pill p-2 bg-white bg-opacity-25 d-flex justify-content-center align-items-center"
+                      style="height: 3rem; width: 3rem"
+                      ><i class="bi bi-telephone-fill"></i
+                    ></span>
+                    <span class="">
+                      <span class="fw-bold">Call Us </span><br />
+                      <span class="opacity-75"
+                        ><small>+880 123456789</small></span
+                      >
+                    </span>
+                  </div>
+
+                  <div
+                    class="d-flex gap-3 align-items-center bg-white bg-opacity-10 rounded-4 p-3 mb-3"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="600"
+                  >
+                    <span
+                      class="rounded-pill p-2 bg-white bg-opacity-25 d-flex justify-content-center align-items-center"
+                      style="height: 3rem; width: 3rem"
+                      ><i class="bi bi-clock-history"></i
+                    ></span>
+                    <span class="">
+                      <span class="fw-bold">Working Hours </span><br />
+                      <span class="opacity-75"
+                        ><small>Sunday-Thursday: 9AM - 7PM </small></span
+                      >
+                    </span>
+                  </div>
+                </div>
+
+                <!-- social links -->
+                <div
+                  class="mt-4"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="700"
+                >
+                  <p class="lead">Follow us</p>
+
+                  <div class="d-flex gap-2">
+                    <a
+                      class="bg-white bg-opacity-25 rounded-pill d-flex justify-content-center align-items-center text-white"
+                      style="width: 3rem; height: 3rem"
+                      href="https://codewithalamin.com"
+                      target="_blank"
+                      ><i class="bi bi-facebook fs-4"></i
+                    ></a>
+                    <a
+                      class="bg-white bg-opacity-25 rounded-pill d-flex justify-content-center align-items-center text-white"
+                      style="width: 3rem; height: 3rem"
+                      href="https://codewithalamin.com"
+                      target="_blank"
+                      ><i class="bi bi-whatsapp fs-4"></i
+                    ></a>
+                    <a
+                      class="bg-white bg-opacity-25 rounded-pill d-flex justify-content-center align-items-center text-white"
+                      style="width: 3rem; height: 3rem"
+                      href="https://codewithalamin.com"
+                      target="_blank"
+                      ><i class="bi bi-twitter fs-4"></i
+                    ></a>
+                    <a
+                      class="bg-white bg-opacity-25 rounded-pill d-flex justify-content-center align-items-center text-white"
+                      style="width: 3rem; height: 3rem"
+                      href="https://codewithalamin.com"
+                      target="_blank"
+                      ><i class="bi bi-linkedin fs-4"></i
+                    ></a>
+                    <a
+                      class="bg-white bg-opacity-25 rounded-pill d-flex justify-content-center align-items-center text-white"
+                      style="width: 3rem; height: 3rem"
+                      href="https://codewithalamin.com"
+                      target="_blank"
+                      ><i class="bi bi-instagram fs-4"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
+              <!-- Map -->
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                <iframe
+                  class="w-100 rounded-4 shadow mb-4"
+                  frameborder="0"
+                  style="border: 0; height: 15rem"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=CPI%20Polytechnic%2C%20Dhaka%2C%20Bangladesh&maptype=roadmap"
+                  allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <!-- form -->
+              <div class="p-5 shadow rounded-4">
+                <h3
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  Send Us a Message <i class="bi bi-chat-dots text-success"></i>
+                </h3>
+
+                <div
+                  class="form-floating mb-3 mt-3"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fname"
+                    placeholder="Enter name"
+                    name="email"
+                  />
+                  <label for="email">Name</label>
+                </div>
+
+                <div
+                  class="form-floating mb-3 mt-3"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter email"
+                    name="email"
+                  />
+                  <label for="email">Email</label>
+                </div>
+
+                <div
+                  class="form-floating mb-3"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
+                >
+                  <textarea
+                    class="form-control"
+                    style="min-height: 12rem"
+                    id="message"
+                    name="text"
+                    placeholder="message"
+                  ></textarea>
+                  <label for="comment">Message</label>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center flex-wrap-reverse"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="700"
+                >
+                  <div class="form-check mb-3">
+                    <label class="form-check-label">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="remember"
+                      />
+                      Trial expertise
+                    </label>
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="formFileMultiple"
+                      multiple
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-success w-100 my-3 py-3"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
+                >
+                  Send Message <i class="bi bi-send-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  -->
+    <!-- Footer -->
+    <!--  -->
+    <footer
+      class="bg-success bg-opacity-10"
+      style="padding-top: 4rem; padding-bottom: 2rem"
+    >
+      <div class="container" style="margin-bottom: 4rem">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+          <div class="col" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-geo-alt text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Address</h4>
+                <span class="opacity-75"
+                  ><small
+                    >House: 17, Road: 01, <br />
+                    Dhaka-1216</small
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-telephone text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Contact</h4>
+                <span class="opacity-75">
+                  <small>Phone: +880 123456789 </small><br />
+                  <small>Email: codewithalamin@email.com </small>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-up" data-aos-duration="1000">
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start text-center text-md-start flex-column flex-md-row"
+            >
+              <i class="bi bi-clock text-success fs-4"></i>
+              <div>
+                <h4 class="fs-5">Opening Hours</h4>
+                <span class="opacity-75">
+                  <small>Sun-Thu: 9AM - 7PM </small><br />
+                  <small>Fri-Sat: Closed </small>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
+            <h4 class="fs-5 text-center text-md-start">Follow Us</h4>
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start"
+            >
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-whatsapp fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-twitter fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-linkedin fs-4"></i
+              ></a>
+              <a
+                class="bg-success rounded-pill d-flex justify-content-center align-items-center text-white"
+                style="width: 3rem; height: 3rem"
+                href="https://codewithalamin.com"
+                target="_blank"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="container text-center" style="margin-top: 2rem">
+        <p>
+          <small>
+            Designed and developed by
+            <a
+              href="http://codewithalamin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-success"
+              >Alamin</a
+            >
+          </small>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/libs/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
